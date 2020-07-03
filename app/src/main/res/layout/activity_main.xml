@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBECED"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtheading"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:background="#0000432E"
+        android:gravity="center"
+        android:text="@string/self_driving_car"
+        android:textAllCaps="true"
+        android:textColor="#003AFF"
+        android:textColorLink="#0088FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtspeed"
+        android:layout_width="91dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:gravity="left"
+        android:text="SPEED:"
+        android:textColor="#0C0C0C"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toEndOf="@+id/slowfast"
+        app:layout_constraintTop_toBottomOf="@+id/btnconnect" />
+
+    <Button
+        android:id="@+id/btnpicture"
+        android:layout_width="108dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/getpciture"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slowfast" />
+
+    <TextView
+        android:id="@+id/txtviewstatus"
+        android:layout_width="126dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="28dp"
+        android:autoText="false"
+        android:background="#00000000"
+        android:gravity="left"
+        android:text="@string/status"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toEndOf="@+id/btnpicture"
+        app:layout_constraintTop_toBottomOf="@+id/txtspeed" />
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="292dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/showimage"
+        app:layout_constraintBottom_toTopOf="@+id/txttime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpicture"
+        app:layout_constraintVertical_bias="0.578"
+        app:srcCompat="@drawable/logobk" />
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/slowfast"
+        android:layout_width="108dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/togglebutton"
+        android:textOff="@string/slow"
+        android:textOn="@string/fast"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnstartstop" />
+
+    <ToggleButton
+        android:id="@+id/btnstartstop"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="116dp"
+        android:background="#33971F"
+        android:textOff="@string/stop"
+        android:textOn="@string/run"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:contentDescription="@string/logoappmain"
+        app:layout_constraintEnd_toStartOf="@+id/txtheading"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobk" />
+
+    <ToggleButton
+        android:id="@+id/btnconnect"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="#E40D0D"
+        android:text="ToggleButton"
+        android:textColor="#131313"
+        android:textOff="DISCONNECT"
+        android:textOn="CONNECT"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
